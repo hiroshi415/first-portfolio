@@ -1,0 +1,86 @@
+.mainpage {
+  height: 70vh;
+  background-image: url("./images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding-top: 5%;
+  font-size: 1.5rem;
+}
+
+.mainpage h1,
+.mainpage p {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 2rem;
+  padding: 1rem;
+  top: 5%;
+}
+.links i {
+  color: white;
+  margin: 1rem;
+}
+
+.githublink i:hover {
+  color: #333;
+  transition: 0.2s;
+}
+.instagramlink i:hover {
+  color: #e1306c;
+  transition: 0.2s;
+}
+.resumelink i:hover {
+  color: black;
+  transition: 0.2s;
+}
+
+/* Nvabar sticky */
+.navbar {
+  transition: 0.5s;
+  height: 10vh;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: darkred;
+  z-index: 1;
+  height: 10vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .mainpage {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .navbar {
+    height: 3vh;
+  }
+  .scrolled {
+    height: 3vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 3vh;
+  }
+  .scrolled {
+    height: 3vh;
+  }
+}

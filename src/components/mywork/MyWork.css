@@ -1,0 +1,161 @@
+.mywork {
+  text-align: center;
+  padding: 1% 0 2% 0;
+}
+.mywork h1 {
+  padding: 20px 0;
+}
+
+.myworks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.myworks img {
+  width: 80%;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+.onhoverzoom1:hover img {
+  transform: scale(1.1);
+}
+.onhoverzoom2:hover img {
+  transform: scale(1.1);
+}
+
+.myworks a {
+  font-size: 1rem;
+}
+.myworks a:hover,
+.myworks p:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.firstGithub {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+  border-radius: 8px;
+  width: 5vw;
+}
+.firstsite {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+  border-radius: 8px;
+  width: 5vw;
+}
+
+.secondGithub {
+  position: absolute;
+  top: 50%;
+  right: 33%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+  border-radius: 8px;
+  width: 5vw;
+}
+.secondsite {
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+  border-radius: 8px;
+  width: 5vw;
+}
+
+@media (max-width: 1280px) {
+  .firstGithub {
+    left: 8%;
+    width: 7vw;
+  }
+  .firstsite {
+    left: 35%;
+  }
+  .secondGithub {
+    right: 34%;
+    width: 7vw;
+  }
+  .secondsite {
+    right: 9%;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .firstGithub {
+    left: 8%;
+    width: 9vw;
+  }
+  .firstsite {
+    left: 35%;
+    width: 7vw;
+  }
+  .secondGithub {
+    right: 34%;
+    width: 9vw;
+  }
+  .secondsite {
+    right: 9%;
+    width: 7vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myworks {
+    flex-direction: column;
+  }
+  .firstGithub {
+    left: 8%;
+    width: 9vw;
+  }
+  .firstsite {
+    left: 35%;
+    width: 7vw;
+  }
+  .secondGithub {
+    right: 34%;
+    width: 9vw;
+  }
+  .secondsite {
+    right: 9%;
+    width: 7vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mywork h1 {
+    font-size: 1.5rem;
+  }
+  .onhoverzoom1 {
+    padding: 0 5px 10px 5px;
+  }
+
+  .firstGithub {
+    top: 21%;
+    left: 15%;
+    width: 20vw;
+  }
+  .firstsite {
+    top: 21%;
+    left: 70%;
+    width: 15vw;
+  }
+  .secondGithub {
+    top: 71%;
+    left: 15%;
+    width: 20vw;
+  }
+  .secondsite {
+    top: 71%;
+    left: 70%;
+    width: 15vw;
+  }
+}

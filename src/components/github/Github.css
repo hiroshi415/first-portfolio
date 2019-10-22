@@ -1,0 +1,62 @@
+.github {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2% 0;
+}
+.githubleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+}
+.github-repos {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+#HTML {
+  display: inline-block;
+  border-bottom: 2px #f16529 solid;
+  padding: 0 5px;
+}
+#python {
+  display: inline-block;
+  border-bottom: 2px #4584b6 solid;
+  padding: 0 5px;
+}
+#javascript {
+  display: inline-block;
+  border-bottom: 2px #00d8ff solid;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 896px) {
+  .github {
+    display: block;
+  }
+  .github-repos {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .githubleft img {
+    width: 100% !important;
+  }
+  .github-repos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+  .repoitems {
+    padding: 10px 15px;
+  }
+}

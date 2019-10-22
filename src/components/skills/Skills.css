@@ -1,0 +1,27 @@
+.skills {
+  text-align: center;
+}
+
+.skills-icon {
+  border-bottom: 2px solid darkred;
+}
+
+.skills-icon li {
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-nav {
+  padding-top: 10vh;
+}
+
+@media screen and (max-width: 480px) {
+  .skills-icon li {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-nav {
+    padding-top: 3vh;
+  }
+}
